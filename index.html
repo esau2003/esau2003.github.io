@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natumanya Esau | Developer Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero p, .about p {
+    max-width: 700px;
+    color: #cbd5e1;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.btn:hover {
+    background: #0369a1;
+}
+
+h2.section-title {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill, .project {
+    background: #172033;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #263449;
+}
+
+.skill {
+    text-align: center;
+}
+
+.project h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #cbd5e1;
+}
+
+.project a {
+    color: #38bdf8;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: #94a3b8;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Esau.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Hello, welcome to my portfolio!</h2>
+    <h1>I'm <span>Natumanya Esau</span></h1>
+    <h2>Junior Software Developer | Computer Science</h2>
+
+    <p>
+        I am a Computer Science graduate from UICT Nakawa
+        with an interest in software development, web technologies
+        and building practical digital solutions.
+        I enjoy learning, solving problems and turning ideas into reality.
+    </p>
+
+    <a href="#projects" class="btn">Explore My Projects</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        My name is Natumanya Esau. I have a Diploma in Computer
+        Science from Uganda Institute of Information and
+        Communications Technology (UICT), Nakawa.
+
+        I am passionate about software development and technology.
+        I have worked on academic and collaborative projects
+        involving web applications and digital solutions.
+
+        My goal is to grow as a software developer while
+        contributing to meaningful technology projects.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">React (Learning)</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">UI/UX Design</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Hospital Management System</h3>
+            <p>
+                A web-based system designed to support
+                hospital operations and patient management
+                through different modules.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Lost & Found System</h3>
+            <p>
+                A centralized platform designed to help
+                institutions manage lost and recovered
+                property efficiently.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Kuuma AI</h3>
+            <p>
+                A collaborative AI-powered project focused
+                on protecting children against cyberbullying
+                and online harassment.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Mobile Authentication UI</h3>
+            <p>
+                A Figma design project featuring mobile
+                login and password recovery interfaces.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p>Email:
+        <a href="mailto:natumanyaesau1@gmail.com">
+            natumanyaesau1@gmail.com
+        </a>
+    </p>
+
+    <p>GitHub:
+        <a href="https://github.com/esau2003" target="_blank">
+            github.com/esau2003
+        </a>
+    </p>
+
+    <p>LinkedIn:
+        <a href="https://www.linkedin.com/in/natumanya-esau-6aba3839a/"
+        target="_blank">
+            View My LinkedIn
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Natumanya Esau. All Rights Reserved.</p>
+    <p>Built with passion for technology.</p>
+</footer>
+
+</body>
+</html>
